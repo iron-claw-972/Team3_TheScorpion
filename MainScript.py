@@ -17,14 +17,14 @@ pin2 =
 pin3 =
 pin4 =
 
-GPIO.setup(pin,GPIO.OUT)
+GPIO.setup(pin1,GPIO.OUT)
 GPIO.setup(pin2,GPIO.OUT)
 GPIO.setup(pin3, GPIO.OUT)
 GPIO.setup(pin4,GPIO.OUT)
 GPIO.setup(enb, GPIO.OUT)
 GPIO.setup(ena,GPIO.OUT)
 
-GPIO.output(pin,False)
+GPIO.output(pin1,False)
 GPIO.output(pin2,False)
 GPIO.output(pin3,False)
 GPIO.output(pin4,False)
@@ -47,7 +47,7 @@ while (firststage == True):
     #move forward
     p.ChangeDutyCycle(80)#speed
     p2.ChangeDutyCycle(80)#speed
-    GPIO.output(pin,False)
+    GPIO.output(pin1,False)
     GPIO.output(pin2,True)
     GPIO.output(pin3,False)
     GPIO.output(pin4,True)
@@ -58,7 +58,7 @@ while (firststage == True):
 while (secondstage == True):
     p.ChangeDutyCycle(80)#speed
     p2.ChangeDutyCycle(80)#speed
-    GPIO.output(pin,False)
+    GPIO.output(pin1,False)
     GPIO.output(pin2,True)
     GPIO.output(pin3,False)
     GPIO.output(pin4,True)
@@ -70,7 +70,7 @@ if (thirdstage == True):
     while (counter <= 20):
         p.ChangeDutyCycle(80)#speed
         p2.ChangeDutyCycle(80)#speed
-        GPIO.output(pin,False)
+        GPIO.output(pin1,False)
         GPIO.output(pin2,True)
         GPIO.output(pin3,False)
         GPIO.output(pin4,True)
