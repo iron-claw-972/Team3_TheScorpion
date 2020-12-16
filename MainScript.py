@@ -4,15 +4,15 @@ from mpu6050 import mpu6050
 
 mpu = mpu6050(0x68)
 
-ena=22
-enb=32
+ena=
+enb=
 
 
 
 GPIO.setmode(GPIO.BOARD)
 #GPIO Pins
 
-pin = 
+pin1 = 
 pin2 =
 pin3 =
 pin4 =
